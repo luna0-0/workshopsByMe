@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Internal CSS -->
+    <link rel="stylesheet" href="./day5.css"/>
+    <style>
+        .para{
+            color:rgb(131, 87, 87);
+        }
+        #divid{
+            background-color: aqua;
+        }
+        p{
+            background-color: bisque;
+        }
+        div:nth-of-type(2){
+            background-color:red;
+        }
+        div:nth-of-type(3), p:nth-of-type(3){
+            background-color: #00ffbd;
+        }
+        a{
+            text-decoration: none;
+            cursor: grab;
+        }
+    </style>
+</head>
+<body>
+    <!-- Inline CSS -->
+    <p class="para" style="color: red;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, vel.</p>
+    <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, vel.</p>
+    <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, vel.</p>
+    <div class="para" id="divid">Lorem ipsum dolor sit amet.</div>
+    <div>adad</div>
+    <div>Lorem ipsum dolor sit amet.
+        <div>Lorem, ipsum.</div>
+    </div>
+    <div>Lorem ipsum dolor sit amet.</div>
+    <div>Lorem ipsum dolor sit amet.</div>
+    <a href="">anchor</a>
+</body>
+</html>
