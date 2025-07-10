@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bitcount+Grid+Double:wght@100..900&family=Rubik:ital,wght@0,700;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <style>
+      div:first-child {
+        color: violet;
+      }
+      div:not(:first-child) {
+        color: red;
+      }
+      div:not(:nth-child(2)) {
+        background-color: #7ed1d1;
+      }
+      div:last-child p:not(:nth-child(2)) {
+        background-color: gainsboro;
+      }
+
+      .para {
+        font-family: "Gothic Medium", "Arial Narrow", Arial, sans-serif;
+        font-weight: 900;
+        font-style: italic;
+        /* 1px=(1/96)th if a inch */
+        font-size: 50px; 
+      }
+      div:first-child {
+        font-family: "Bitcount Grid Double";
+      }
+      div {
+        line-height: 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <div>first div</div>
+    <div>second div</div>
+    <div>third div</div>
+    <div class="para">
+      <p>1</p>
+      <p>2</p>
+      <p>3</p>
+    </div>
+  </body>
+</html>
